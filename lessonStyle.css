@@ -18,6 +18,12 @@ p {
     color: white;
     font-size: 1rem;
     margin: .5rem;
+    text-align: justify;
+}
+
+b {
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .back a{
@@ -56,6 +62,13 @@ p {
     margin-right: .3rem;
 }
 
+.files {
+    font-size: inherit;
+    font-family: inherit;
+    color: lightcoral;
+    padding-left: 2rem;
+}
+
 .command, .infos div {
     margin-bottom: .3rem;
     font-family: 'Inconsolata';
@@ -72,4 +85,13 @@ p {
 }
 .branch {
     color: lightskyblue;
+}
+
+img {
+    max-width: 70%;
+    margin: 1rem auto;
+}
+
+footer {
+    height: 3rem;
 }
