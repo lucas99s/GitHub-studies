@@ -22,7 +22,7 @@
             <b class="mingw">Untracked</b> se refere aos arquivos novos ou que foram removidos do git que o git não reconhece. <br>
             <b class="user">Unmodified</b> são os arquivos que foram comitados e não sofreram modificação após esse commit. <br>
             <b class="directory">Modified</b> são os arquivos que após terem sido comitados, foram alterado. <br>
-            <b class="branch">Staged</b> está relacionado aos arquivos que estão prontos para serem comitados. Após esse commit, os arquivos passam a ter o status de unmodified
+            <b class="branch">Staged</b> está relacionado aos arquivos que estão prontos para serem comitados. Após esse commit, os arquivos passam a ter o status de unmodified.
         </p>
         <p>O comando para você reconhecer os status do seus arquivos é o 'git status'</p>
         <div class="code">
@@ -60,7 +60,7 @@
             
         <p> Os dois últimos estão com o status de Untracked, ou seja, eles são novos e nunca foram comitados antes. O primeiro é referente a pasta nova, onde armazenarei imagens como aquela no topo, e o segundo é essa página.</p>
 
-        <p>Para que os arquivos possam ser comitados, primeiro necessita colocar ele 'on stage', o comando para isso é git add 'nomeDoArquivo'. Podemos fazer isso para cada um do arquivo, mas como tem mais de um arquivo que precisa ser colocado on stage, podemos usar o '*', para se referir a todos que não foram adicionados</p>
+        <p>Para que os arquivos possam ser comitados, primeiro necessita colocar ele 'on stage', o comando para isso é git add 'nomeDoArquivo'. Podemos fazer isso para cada um do arquivo, mas como tem mais de um arquivo que precisa ser colocado on stage, podemos usar o '*', para se referir a todos que não foram adicionados.</p>
 
         <div class="code">
             <div class="infos">
@@ -74,7 +74,7 @@
             </div>            
         </div>
 
-        <p>Feito isso, tanto os arquivos com o status unmodified, quanto os untracked foram colocados on stage e estão prontos para serem comitados. Você pode conferir isso digitando 'git status'</p>
+        <p>Feito isso, tanto os arquivos com o status unmodified, quanto os untracked foram colocados on stage e estão prontos para serem comitados. Você pode conferir isso digitando 'git status'.</p>
 
         <div class="code">
             <div class="infos">
@@ -110,18 +110,22 @@
 
         </div>
         
-        <p>E pronto, você acaba de comitar os seus arquivos. Agora você pode verificar com o 'git status'.</p>
+        <p>E pronto, você acaba de comitar os seus arquivos. Você pode usar o 'git status' para verificar se está tudo certo. As vezes pode acontecer de você esquecer algum arquivo fora do stage, e esse comando irá te mostrar se tiver algum arquivo pendente para ser comitado, mas nesse caso, como você pode notar, não há mais nada para ser comitado.</p>
 
         <div class="code">
             <div class="infos">
                 <div class="user">@User</div><div class="mingw">MINGW64</div><div class="directory">~/Git Directory</div><div class="branch">(master)</div>
             </div> 
 
-            <div class="command">$ git status</div>
+            <div class="command">
+                $ git status<br>
+                On branch master <br>
+                nothing to commit, working tree clean
+            </div>
 
             <div class="infos">
                 <div class="user">@User</div><div class="mingw">MINGW64</div><div class="directory">~/Git Directory</div><div class="branch">(master)</div>
-            </div> 
+            </div>
         </div>
 
     </div>
