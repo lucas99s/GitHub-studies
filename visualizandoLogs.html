@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lessonStyle.css">
+
+    <style>
+        .files {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="back">
+        <a href="index.html">Voltar</a>
+    </div>
+    <div class="container">
+        <h1>Visualizando Logs</h1>
+
+        <p>Os logs nada mais são que os seus registros dos commits que você fez, e tem várias formas de você visualizar isso como 'git log'</p>
+
+        <div class="code">
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+            <div class="command">
+                $ git log <br>
+
+                <b class="yellow">commit ce436f9f2ab2a59cd0f8d51814dd61f1bd4ae4c7</b> <br>
+                Author: Lucas Rodrigues (lucasdeveloper99s@gmail.com) <br>
+                Date:   Fri Feb 4 19:21:49 2022 -0300 <br> <br>
+
+                    <div class="focus">
+                        Nova página e atualização de estilo
+                    </div> <br>
+
+                <b class="yellow">commit ca1ad28f2a9e3f3be6552ef0d877e92aae212517</b><br>
+                Author: Lucas Rodrigues (lucasdeveloper99s@gmail.com) <br>
+                Date:   Fri Feb 4 11:43:40 2022 -0300 <br> <br>
+
+                    <div class="focus">
+                        Atualização do arquivo iniciandoRepositorio.hmtl
+                    </div> <br>
+
+                <b class="yellow">commit 6e601c7088f676c4de9391e102464200610f49b6</b> <br>
+                Author: Lucas Rodrigues (lucasdeveloper99s@gmail.com) <br>
+                Date:   Thu Feb 3 22:39:47 2022 -0300 <br> <br>
+
+                    <div class="focus">
+                        Primeira versão da plataforma de aprendizado sobre github
+                    </div>
+
+            </div>
+
+        </div>
+
+        <p>Aqui você pode perceber a importância de escrever a mensagem na hora do commit, pois assim é possível saber exatamente sobre o que se trata cada commit, inclusive o da primeira linha que foi comitado na aula anterior como exemplo. Boas descrições são essênciais.</p>
+
+        <p>Existem informações importantes em cada um deles, como quem fez o commit (já que é possível ter mais de uma pessoa trabalhando no mesmo código), email, quando e inclusive o identificador destacado em amarelo, uma hash única para cada commit, importante para nosso controle de versionamento que depois falaremos.</p>
+
+        <p>Podemos utilizar também 'git log --author='Nome' para pegar todos os commits de um determinado programador.</p>
+
+        <div class="code">
+            <div class="infos">
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
+
+            <div class="command">
+                $ git log --author='Lucas'
+            </div>
+
+            <b class="yellow">commit ce436f9f2ab2a59cd0f8d51814dd61f1bd4ae4c7</b> <br>
+            Author: Lucas Rodrigues (lucasdeveloper99s@gmail.com) <br>
+            Date:   Fri Feb 4 19:21:49 2022 -0300 <br> <br>
+
+                <b class="focus">Nova página e atualização de estilo</b> <br>
+
+            <b class="yellow">commit ca1ad28f2a9e3f3be6552ef0d877e92aae212517</b> <br>
+            Author: Lucas Rodrigues (lucasdeveloper99s@gmail.com) <br>
+            Date:   Fri Feb 4 11:43:40 2022 -0300 <br>
+
+                Atualização do arquivo iniciandoRepositorio.hmtl <br>
+
+            <b class="yellow">commit 6e601c7088f676c4de9391e102464200610f49b6</b>
+            Author: Lucas Rodrigues (lucasdeveloper99s@gmail.com)
+            Date:   Thu Feb 3 22:39:47 2022 -0300
+
+                First version of github platform learning
+
+
+        </div>
+    </div>
+</body>
+
+<footer></footer>
+</html>

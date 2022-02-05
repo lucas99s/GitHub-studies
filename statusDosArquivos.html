@@ -19,15 +19,15 @@
         </p>
         <img src="img/statusFiles.png">
         <p>
-            <b class="mingw">Untracked</b> se refere aos arquivos novos ou que foram removidos do git que o git não reconhece. <br>
-            <b class="user">Unmodified</b> são os arquivos que foram comitados e não sofreram modificação após esse commit. <br>
-            <b class="directory">Modified</b> são os arquivos que após terem sido comitados, foram alterado. <br>
-            <b class="branch">Staged</b> está relacionado aos arquivos que estão prontos para serem comitados. Após esse commit, os arquivos passam a ter o status de unmodified.
+            <b class="red">Untracked</b> se refere aos arquivos novos ou que foram removidos do git que o git não reconhece. <br>
+            <b class="green">Unmodified</b> são os arquivos que foram comitados e não sofreram modificação após esse commit. <br>
+            <b class="yellow">Modified</b> são os arquivos que após terem sido comitados, foram alterado. <br>
+            <b class="blue">Staged</b> está relacionado aos arquivos que estão prontos para serem comitados. Após esse commit, os arquivos passam a ter o status de unmodified.
         </p>
         <p>O comando para você reconhecer os status do seus arquivos é o 'git status'</p>
         <div class="code">
             <div class="infos">
-                <div class="user">@User</div><div class="mingw">MINGW64</div><div class="directory">~/Git Directory</div><div class="branch">(master)</div>
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
             </div>
 
             <div class="command">
@@ -36,7 +36,7 @@
                 On branch master <br>
                 Changes not staged for commit: <br><br>
 
-                        <div class="files">
+                        <div class="focus red">
                             modified:   index.html <br>
                             modified:   iniciandoRepositorio.html <br>
                             modified:   lessonStyle.css <br>
@@ -45,14 +45,14 @@
 
                 Untracked files: <br><br>
 
-                        <div class="files">
+                        <div class="focus red">
                             img/ <br>
                             statusDosArquivos.html <br>
                         </div> <br>
             </div>
 
             <div class="infos">
-                <div class="user">@User</div><div class="mingw">MINGW64</div><div class="directory">~/Git Directory</div><div class="branch">(master)</div>
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
             </div>
 
         </div>
@@ -64,27 +64,27 @@
 
         <div class="code">
             <div class="infos">
-                <div class="user">@User</div><div class="mingw">MINGW64</div><div class="directory">~/Git Directory</div><div class="branch">(master)</div>
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
             </div>
 
             <div class="command">$ git add *</div>
 
             <div class="infos">
-                <div class="user">@User</div><div class="mingw">MINGW64</div><div class="directory">~/Git Directory</div><div class="branch">(master)</div>
-            </div>            
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>          
         </div>
 
         <p>Feito isso, tanto os arquivos com o status unmodified, quanto os untracked foram colocados on stage e estão prontos para serem comitados. Você pode conferir isso digitando 'git status'.</p>
 
         <div class="code">
             <div class="infos">
-                <div class="user">@User</div><div class="mingw">MINGW64</div><div class="directory">~/Git Directory</div><div class="branch">(master)</div>
-            </div>            
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>           
 
             <div class="command">$ git status <br>
                 On branch master <br>
                 Changes to be committed: <br><br>
-                    <div class="files" style="color: lightgreen;">
+                    <div class="focus green">
                         new file:   img/statusFiles.png <br>
                         modified:   index.html <br>
                         modified:   iniciandoRepositorio.html <br>
@@ -103,8 +103,8 @@
 
         <div class="code">
             <div class="infos">
-                <div class="user">@User</div><div class="mingw">MINGW64</div><div class="directory">~/Git Directory</div><div class="branch">(master)</div>
-            </div>         
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>      
             
             <div class="command">$ git commit -m 'Nova página adicionada e atualização de estilo'</div>
 
@@ -114,8 +114,8 @@
 
         <div class="code">
             <div class="infos">
-                <div class="user">@User</div><div class="mingw">MINGW64</div><div class="directory">~/Git Directory</div><div class="branch">(master)</div>
-            </div> 
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
+            </div>
 
             <div class="command">
                 $ git status<br>
@@ -124,7 +124,7 @@
             </div>
 
             <div class="infos">
-                <div class="user">@User</div><div class="mingw">MINGW64</div><div class="directory">~/Git Directory</div><div class="branch">(master)</div>
+                <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
             </div>
         </div>
 

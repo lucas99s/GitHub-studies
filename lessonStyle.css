@@ -22,8 +22,9 @@ p {
 }
 
 b {
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 400;
+    font-size: inherit;
+    font-family: inherit;
 }
 
 .back a{
@@ -62,10 +63,10 @@ b {
     margin-right: .3rem;
 }
 
-.files {
+.focus {
     font-size: inherit;
     font-family: inherit;
-    color: lightcoral;
+    /* color: lightcoral; */
     padding-left: 2rem;
 }
 
@@ -74,16 +75,16 @@ b {
     font-family: 'Inconsolata';
     font-size: 1rem;
 }
-.user {
+.green {
     color: lightgreen
 }
-.mingw {
+.red {
     color: lightcoral;
 }
-.directory {
+.yellow {
     color: khaki;
 }
-.branch {
+.blue {
     color: lightskyblue;
 }
 
