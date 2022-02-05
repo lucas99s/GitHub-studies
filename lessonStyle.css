@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
+:root {
+    --code: 'Inconsolata', monospace;
+}
+
 .container {
     justify-content: flex-start;
     /* margin: 1rem auto; */
@@ -48,7 +52,7 @@ b {
     min-height: 5rem;
     padding: 1rem;
     width: 70%;
-    font-family: 'Inconsolata', monospace;
+    font-family: var(--code);
     background-color: var(--bluish-gray-3);
     color: white;
     font-size: 1rem;
@@ -59,20 +63,23 @@ b {
     /* margin-bottom: .3rem; */
 }
 
-.infos div {
-    margin-right: .3rem;
-}
-
 .focus {
+    margin: 1rem 0;
     font-size: inherit;
     font-family: inherit;
     /* color: lightcoral; */
     padding-left: 2rem;
 }
 
-.command, .infos div {
-    margin-bottom: .3rem;
-    font-family: 'Inconsolata';
+ul li {
+    list-style: none;
+    font-size: 1rem;
+    font-family: var(--code);
+}
+
+.infos div {
+    margin: .3rem .2rem .3rem 0;
+    font-family: var(--code);
     font-size: 1rem;
 }
 .green {

@@ -27,72 +27,64 @@
             <div class="infos">
                 <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
             </div>
-            <div class="command">
-                $ git log <br>
-
-                <b class="yellow">commit ce436f9f2ab2a59cd0f8d51814dd61f1bd4ae4c7</b> <br>
-                Author: Lucas Rodrigues (lucasdeveloper99s@gmail.com) <br>
-                Date:   Fri Feb 4 19:21:49 2022 -0300 <br> <br>
-
-                    <div class="focus">
-                        Nova página e atualização de estilo
-                    </div> <br>
-
-                <b class="yellow">commit ca1ad28f2a9e3f3be6552ef0d877e92aae212517</b><br>
-                Author: Lucas Rodrigues (lucasdeveloper99s@gmail.com) <br>
-                Date:   Fri Feb 4 11:43:40 2022 -0300 <br> <br>
-
-                    <div class="focus">
-                        Atualização do arquivo iniciandoRepositorio.hmtl
-                    </div> <br>
-
-                <b class="yellow">commit 6e601c7088f676c4de9391e102464200610f49b6</b> <br>
-                Author: Lucas Rodrigues (lucasdeveloper99s@gmail.com) <br>
-                Date:   Thu Feb 3 22:39:47 2022 -0300 <br> <br>
-
-                    <div class="focus">
-                        Primeira versão da plataforma de aprendizado sobre github
-                    </div>
-
-            </div>
-
+            <ul>
+                <li>$ git log</li>
+                <li class="yellow">commit ce436f9f2ab2a59cd0f8d51814dd61f1bd4ae4c7</li>
+                <li>Author: Lucas Rodrigues (lucasdeveloper99s@gmail.com)</li>
+                <li>Date:   Fri Feb 4 19:21:49 2022 -0300</li>
+                <ul class="focus">
+                    <li >Nova página e atualização de estilo</li>
+                </ul>
+                <li class="yellow">commit ca1ad28f2a9e3f3be6552ef0d877e92aae212517</li>
+                <li>Author: Lucas Rodrigues (lucasdeveloper99s@gmail.com)</li>
+                <li>Date:   Fri Feb 4 11:43:40 2022 -0300</li>
+                <ul class="focus">
+                    <li>Atualização do arquivo iniciandoRepositorio.hmtl</li>
+                </ul>
+                <li class="yellow">commit 6e601c7088f676c4de9391e102464200610f49b6</li>
+                <li>Author: Lucas Rodrigues (lucasdeveloper99s@gmail.com)</li>
+                <li>Date:   Thu Feb 3 22:39:47 2022 -0300</li>
+                <ul class="focus">
+                    <li>Primeiro commit</li>
+                </ul>
+            </ul>
         </div>
 
         <p>Aqui você pode perceber a importância de escrever a mensagem na hora do commit, pois assim é possível saber exatamente sobre o que se trata cada commit, inclusive o da primeira linha que foi comitado na aula anterior como exemplo. Boas descrições são essênciais.</p>
 
         <p>Existem informações importantes em cada um deles, como quem fez o commit (já que é possível ter mais de uma pessoa trabalhando no mesmo código), email, quando e inclusive o identificador destacado em amarelo, uma hash única para cada commit, importante para nosso controle de versionamento que depois falaremos.</p>
 
-        <p>Podemos utilizar também 'git log --author='Nome' para pegar todos os commits de um determinado programador.</p>
+        <p>Podemos utilizar também " git log --author='Nome' " para pegar todos os commits de um determinado programador.</p>
 
         <div class="code">
             <div class="infos">
                 <div class="green">@User</div><div class="red">MINGW64</div><div class="yellow">~/Git Directory</div><div class="blue">(master)</div>
             </div>
 
-            <div class="command">
-                $ git log --author='Lucas'
-            </div>
-
-            <b class="yellow">commit ce436f9f2ab2a59cd0f8d51814dd61f1bd4ae4c7</b> <br>
-            Author: Lucas Rodrigues (lucasdeveloper99s@gmail.com) <br>
-            Date:   Fri Feb 4 19:21:49 2022 -0300 <br> <br>
-
-                <b class="focus">Nova página e atualização de estilo</b> <br>
-
-            <b class="yellow">commit ca1ad28f2a9e3f3be6552ef0d877e92aae212517</b> <br>
-            Author: Lucas Rodrigues (lucasdeveloper99s@gmail.com) <br>
-            Date:   Fri Feb 4 11:43:40 2022 -0300 <br>
-
-                Atualização do arquivo iniciandoRepositorio.hmtl <br>
-
-            <b class="yellow">commit 6e601c7088f676c4de9391e102464200610f49b6</b>
-            Author: Lucas Rodrigues (lucasdeveloper99s@gmail.com)
-            Date:   Thu Feb 3 22:39:47 2022 -0300
-
-                First version of github platform learning
-
-
+            <ul>
+                <li>$ git log --author='Lucas'</li>
+                <li class="yellow">commit ce436f9f2ab2a59cd0f8d51814dd61f1bd4ae4c7</li>
+                <li>Author: <b class="red"> Lucas </b>Rodrigues (lucasdeveloper99s@gmail.com)</li>
+                <li>Date:   Fri Feb 4 19:21:49 2022 -0300</li>
+                <ul class="focus">
+                    <li>Nova página e atualização de estilo</li>
+                </ul>
+                <li class="yellow">commit ca1ad28f2a9e3f3be6552ef0d877e92aae212517</li>
+                <li>Author: <b class="red"> Lucas </b>Rodrigues (lucasdeveloper99s@gmail.com)</li>
+                <li>Date:   Fri Feb 4 11:43:40 2022 -030</li>
+                <ul class="focus">
+                    <li>Atualização do arquivo iniciandoRepositorio.hmtl</li>
+                </ul>
+                <li class="yellow">commit 6e601c7088f676c4de9391e102464200610f49b6</li>
+                <li>Author: <b class="red"> Lucas</b> Rodrigues (lucasdeveloper99s@gmail.com)</li>
+                <li>Date:   Thu Feb 3 22:39:47 2022 -0300</li>
+                <ul class="focus">
+                    <li>Primeiro commit</li>
+                </ul>
+            </ul>
         </div>
+
+        <p>Perceba que o nome do autor fica destacado em vermelho para facilitar a identificação.</p>
     </div>
 </body>
 
